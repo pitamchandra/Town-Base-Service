@@ -6,6 +6,7 @@ import townRouter from '../modules/town/town.router.js';
 import categoryRouter from "../modules/catalog/category.router.js"
 import subsectionRouter from "../modules/catalog/subsection.router.js"
 import addonRouter from '../modules/catalog/addon.router.js'
+import bookingRouter from '../modules/booking/booking.router.js'
 
 const router = Router();
 
@@ -19,5 +20,6 @@ router.use("/towns", townRouter);
 router.use("/categories", categoryRouter);
 router.use("/subsections", subsectionRouter);
 router.use("/addons", addonRouter);
+router.use("/booking", bookingRouter);
 
 export default router;
